@@ -1,0 +1,53 @@
+<html>
+  <head>
+      <title>
+          Articles
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <span id="user_id"></span>
+    <span id="user"></span>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Write Article</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Your Article</h4>
+      </div>
+      <div class="modal-body">
+        <p>Heading of your article.</p>
+        <input type="text" placeholder="Heading" id="heading">
+      </div>
+      <div class="modal-body">
+        <p>content of your article.</p>
+        <textarea rows="10" columns="50" id="content"></textArea>
+        <div class="modal-footer">
+           <button type="button" class="btn btn-default" id="submit_article">submit</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <div class="container">
+      <div>
+          <a href="/">Home</a>
+      </div>
+      <hr>
+      <div id="load-articles"></div>
+  </div>
+  <button type="button" class="btn btn-default" id="more_article">load more</button>
+      <script type="text/javascript" src="/files/articles_main.js"></script>
+  </body>
+</html>
